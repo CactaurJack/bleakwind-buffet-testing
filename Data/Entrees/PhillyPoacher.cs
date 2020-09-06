@@ -2,9 +2,9 @@
 using System.Collections.Generic;
 using System.Text;
 
-namespace Data.Entree
+namespace BleakwindBuffet.Data.Entrees
 {
-    class PhillyPoacher
+    public class PhillyPoacher
     {
         /// <summary>
         /// Gets burger price
@@ -27,9 +27,9 @@ namespace Data.Entree
             get
             {
                 List<string> specialInstructions = new List<string>();
-                if (!Sirloin) { SpecialInstructions.Add("Hold sirloin"); };
-                if (!Onion) { SpecialInstructions.Add("Hold onion"); };
-                if (!Roll) { SpecialInstructions.Add("Hold roll"); };
+                if (!Sirloin) { specialInstructions.Add("Hold sirloin"); };
+                if (!Onion) { specialInstructions.Add("Hold onion"); };
+                if (!Roll) { specialInstructions.Add("Hold roll"); };
                 return specialInstructions;
             }
         }

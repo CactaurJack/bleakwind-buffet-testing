@@ -2,9 +2,9 @@
 using System.Collections.Generic;
 using System.Text;
 
-namespace Data.Entree
+namespace BleakwindBuffet.Data.Entrees
 {
-    class GardeHoldrcOmelette
+    public class GardenOrcOmelette
     {
         /// <summary>
         /// Gets burger price

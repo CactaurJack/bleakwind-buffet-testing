@@ -3,18 +3,18 @@ using System.Collections.Generic;
 using System.Text;
 using BleakwindBuffet.Data.Enums;
 
-namespace Data.Drinks
+namespace BleakwindBuffet.Data.Sides
 {
-    class SailorsSoda
+    public class DragonbornWaffleFries
     {
         public Size Size { get; set; } = Size.Small;
         public uint Calories
         {
             get
             {
-                if (Size == Size.Small) return 117;
-                if (Size == Size.Medium) return 153;
-                if (Size == Size.Large) return 205;
+                if (Size == Size.Small) return 77;
+                if (Size == Size.Medium) return 89;
+                if (Size == Size.Large) return 100;
                 throw new NotImplementedException($"Unknown size of {Size}");
             }
         }
@@ -23,27 +23,10 @@ namespace Data.Drinks
         {
             get
             {
-                if (Size == Size.Small) return 0.93;
-                if (Size == Size.Medium) return 1.28;
-                if (Size == Size.Large) return 1.82;
+                if (Size == Size.Small) return 0.42;
+                if (Size == Size.Medium) return 0.76;
+                if (Size == Size.Large) return 0.96;
                 throw new NotImplementedException($"Unknown size of {Size}");
-            }
-        }
-
-        public bool Ice { get; set; } = true;
-
-        private SodaFlavor flavor = SodaFlavor.Cherry;
-
-        public SodaFlavor Flavor
-        {
-            get
-            {
-                return flavor;
-            }
-
-            set
-            {
-                flavor = value;
             }
         }
 
@@ -52,18 +35,13 @@ namespace Data.Drinks
             get
             {
                 List<string> specialInstructions = new List<string>();
-                if(!Ice) { specialInstructions.Add("Hold ice"); }
                 return specialInstructions;
             }
         }
 
         public override string ToString()
         {
-            return Size + " " + flavor + " Sailor's Soda";
+            return Size + " Dragonborn Waffle Fries";
         }
-
-
-
     }
 }
-

@@ -3,9 +3,9 @@ using System.Collections.Generic;
 using System.Text;
 using BleakwindBuffet.Data.Enums;
 
-namespace Data.Drinks
+namespace BleakwindBuffet.Data.Drinks
 {
-    class WarriorWater
+    public class WarriorWater
     {
         public Size Size { get; set; } = Size.Small;
         public uint Calories
@@ -33,7 +33,7 @@ namespace Data.Drinks
             {
                 List<string> specialInstructions = new List<string>();
                 if (!Ice) { specialInstructions.Add("Hold ice"); }
-                if (Lemon) { specialInstructions.Add("Add Lemon"); }
+                if (Lemon) { specialInstructions.Add("Add lemon"); }
                 return specialInstructions;
             }
         }

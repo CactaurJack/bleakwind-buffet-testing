@@ -3,9 +3,9 @@ using System.Collections.Generic;
 using System.Text;
 using BleakwindBuffet.Data.Enums;
 
-namespace Data.Drinks
+namespace BleakwindBuffet.Data.Drinks
 {
-    class CandlehearthCoffee
+    public class CandlehearthCoffee
     {
         public Size Size { get; set; } = Size.Small;
         public uint Calories
@@ -54,7 +54,7 @@ namespace Data.Drinks
             }
             else
             {
-                return Size + "Candlehearth Coffee";
+                return Size + " Candlehearth Coffee";
             }
         }
     }

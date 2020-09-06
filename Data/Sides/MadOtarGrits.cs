@@ -3,18 +3,18 @@ using System.Collections.Generic;
 using System.Text;
 using BleakwindBuffet.Data.Enums;
 
-namespace Data.Side
+namespace BleakwindBuffet.Data.Sides
 {
-    class FriedMiraak
+    public class MadOtarGrits
     {
         public Size Size { get; set; } = Size.Small;
         public uint Calories
         {
             get
             {
-                if (Size == Size.Small) return 151;
-                if (Size == Size.Medium) return 236;
-                if (Size == Size.Large) return 306;
+                if (Size == Size.Small) return 105;
+                if (Size == Size.Medium) return 142;
+                if (Size == Size.Large) return 179;
                 throw new NotImplementedException($"Unknown size of {Size}");
             }
         }
@@ -23,9 +23,9 @@ namespace Data.Side
         {
             get
             {
-                if (Size == Size.Small) return 1.78;
-                if (Size == Size.Medium) return 2.01;
-                if (Size == Size.Large) return 2.88;
+                if (Size == Size.Small) return 1.22;
+                if (Size == Size.Medium) return 1.58;
+                if (Size == Size.Large) return 1.93;
                 throw new NotImplementedException($"Unknown size of {Size}");
             }
         }
@@ -41,7 +41,7 @@ namespace Data.Side
 
         public override string ToString()
         {
-            return Size + " Fried Miraak";
+            return Size + " Mad Otar Grits";
         }
     }
 }

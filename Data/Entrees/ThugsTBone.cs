@@ -2,41 +2,33 @@
 using System.Collections.Generic;
 using System.Text;
 
-namespace Data.Entree
+namespace BleakwindBuffet.Data.Entrees
 {
-    class DoubleDraugr
+    public class ThugsTBone
     {
         /// <summary>
         /// Gets burger price
         /// </summary>
-        public double Price => 7.32;
+        public double Price => 6.44;
 
         /// <summary>
         /// Gets calories
         /// </summary>
-        public uint Calories => 843;
+        public uint Calories => 982;
 
-        public bool Tomato { get; set; } = true;
-
-        public bool Lettuce { get; set; } = true;
-
-        public bool Mayo { get; set; } = true;
 
         public List<string> SpecialInstructions
         {
             get
             {
                 List<string> specialInstructions = new List<string>();
-                if (!Tomato) { specialInstructions.Add("Hold tomato"); };
-                if (!Lettuce) { specialInstructions.Add("Hold lettuce"); };
-                if (!Mayo) { specialInstructions.Add("Hold mayo"); };
                 return specialInstructions;
             }
         }
 
         public override string ToString()
         {
-            return "Double Drauger";
+            return "Thugs T-Bone";
         }
     }
 }
